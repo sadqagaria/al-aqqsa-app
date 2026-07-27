@@ -73,5 +73,26 @@ mark{background:linear-gradient(180deg,#ffe88d,#f7c934);color:#171306;box-shadow
 .bottom-nav{border-top-color:color-mix(in srgb,var(--luxury-gold) 34%,var(--line));box-shadow:0 -10px 35px rgba(4,54,45,.1)}.nav-btn span{font-family:Arial,sans-serif;color:var(--primary)}
 dialog{border-color:color-mix(in srgb,var(--luxury-gold) 45%,var(--line));box-shadow:0 38px 100px rgba(0,0,0,.48)}
 @media(max-width:950px){.premium-date-ribbon{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:620px){.premium-date-ribbon{grid-template-columns:1fr 1fr;gap:9px}.premium-date-ribbon>div{min-height:135px;padding:14px 9px}.premium-date-ribbon strong{font-size:12px}.premium-date-ribbon b{font-size:13px}.premium-date-ribbon .time-card b{font-size:21px}.feature-card-final:hover{transform:translateY(-3px)}}
-@media(max-width:390px){.premium-date-ribbon{grid-template-columns:1fr}.premium-date-ribbon>div{min-height:110px}}
+@media(max-width:620px){
+  .home-premium-layout{display:flex;flex-direction:column}
+  .home-premium-layout>.prophet-hero{order:1}
+  .home-premium-layout>#homePrayer{display:contents}
+  .home-premium-layout>#homePrayer>.next-prayer{order:2;margin-top:16px;min-height:145px;padding:18px}
+  .home-premium-layout>.premium-date-ribbon{order:3;margin-top:12px;grid-template-columns:1fr 1fr;gap:9px}
+  .home-premium-layout>#homePrayer>.prayer-times{order:4;margin-top:12px}
+  .home-premium-layout>.feature-grid-final{order:5;margin-top:18px}
+  .premium-date-ribbon>div{min-height:104px;padding:10px 7px;border-radius:18px}
+  .premium-date-ribbon .date-icon{width:27px;height:27px;border-radius:9px;font-size:14px}
+  .premium-date-ribbon strong{font-size:11px;line-height:1.35}
+  .premium-date-ribbon b{font-size:12px;line-height:1.55}
+  .premium-date-ribbon .time-card b{font-size:18px}
+  .home-premium-layout .next-prayer .countdown{font-size:34px}
+  .feature-card-final:hover{transform:translateY(-3px)}
+}
+@media(max-width:390px){
+  .home-premium-layout>.premium-date-ribbon{grid-template-columns:1fr 1fr;gap:7px}
+  .premium-date-ribbon>div{min-height:98px;padding:8px 5px}
+  .premium-date-ribbon strong{font-size:10px}
+  .premium-date-ribbon b{font-size:11px}
+  .premium-date-ribbon .time-card b{font-size:16px}
+}

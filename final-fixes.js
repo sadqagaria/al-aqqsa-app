@@ -32,12 +32,12 @@ function professionalCards(cards){
 }
 
 enhancedHomeHTML=function(){
-  return `<section class="prophet-hero">
+  return `<div class="home-premium-layout"><section class="prophet-hero">
     <p>رفيقك الإيماني اليومي</p>
     <h1>اللهم صلِّ وسلم وبارك على سيدنا محمد ﷺ</h1>
     <p>قرآن وأذكار وتلاوة ومواقيت موثوقة في واجهة واضحة.</p>
   </section>
-  ${dateRibbon()}<div id="homePrayer"></div>${professionalCards(visibleCards())}`;
+  ${dateRibbon()}<div id="homePrayer"></div>${professionalCards(visibleCards())}</div>`;
 };
 
 renderMore=function(){
