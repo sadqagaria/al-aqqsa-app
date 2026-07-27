@@ -1,0 +1,29 @@
+:root{--aqsa-gold:#d7a84b;--aqsa-ink:#12372f;--aqsa-cream:#fffaf0}
+.date-ribbon{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0}
+.date-ribbon>div{background:rgba(255,255,255,.86);border:1px solid rgba(7,90,67,.14);border-radius:16px;padding:12px;text-align:center}
+.date-ribbon strong{display:block;color:var(--primary);font-size:15px}.date-ribbon span{font-size:13px;color:var(--muted)}
+.prophet-hero{position:relative;overflow:hidden;min-height:205px;border-radius:26px;padding:32px;color:#fff;background:radial-gradient(circle at 20% 15%,rgba(215,168,75,.36),transparent 30%),linear-gradient(135deg,#0b3c32,#096247 55%,#093f35)}
+.prophet-hero:before{content:"";position:absolute;inset:auto -5% -35% auto;width:360px;height:260px;border-radius:50% 50% 12% 12%;border:18px solid rgba(255,255,255,.12);box-shadow:-95px -24px 0 -72px rgba(255,255,255,.17),-180px 20px 0 -128px rgba(255,255,255,.13)}
+.prophet-hero:after{content:"";position:absolute;right:19%;bottom:22%;width:36px;height:110px;border-radius:22px 22px 0 0;background:rgba(255,255,255,.14);box-shadow:88px 20px 0 28px rgba(255,255,255,.1)}
+.prophet-hero>*{position:relative;z-index:1}.prophet-hero h1{font-size:clamp(25px,4vw,42px);max-width:700px;line-height:1.55;margin:0 0 8px}.prophet-hero p{opacity:.86}
+.section-intro{background:linear-gradient(135deg,rgba(7,90,67,.08),rgba(215,168,75,.11));border:1px solid rgba(7,90,67,.12);padding:18px;border-radius:20px;margin-bottom:16px}
+.feature-grid-pro{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:13px}
+.feature-card-pro{cursor:pointer;transition:.18s transform,.18s box-shadow;min-height:150px}.feature-card-pro:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(7,90,67,.12)}
+.feature-card-pro .feature-icon{font-size:30px}.feature-card-pro h3{margin:10px 0 6px}
+.source-note{border-right:4px solid var(--aqsa-gold);background:#fff9e8;padding:12px 14px;border-radius:12px;margin:12px 0;color:#5c4a20}
+.chapter-list{display:grid;gap:10px}.chapter-row{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.chapter-row .num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--primary);color:white;font-weight:800}
+.content-accordion{border:1px solid var(--line);border-radius:16px;background:var(--card);margin:10px 0;overflow:hidden}
+.content-accordion summary{cursor:pointer;padding:16px;font-weight:800}.content-accordion .inside{padding:0 16px 16px;line-height:2}
+.daily-check{display:grid;gap:11px}.daily-item{display:flex;align-items:center;gap:12px;padding:15px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.daily-item.done{opacity:.66}.daily-item input{width:23px;height:23px;accent-color:var(--primary)}
+.progress-wide{height:10px;border-radius:99px;background:var(--primary3);overflow:hidden}.progress-wide span{display:block;height:100%;background:linear-gradient(90deg,var(--primary),var(--aqsa-gold))}
+.tasbeeh-pro{-webkit-tap-highlight-color:transparent;user-select:none;outline:none!important}.tasbeeh-pro:focus,.tasbeeh-pro:active{outline:none!important;box-shadow:var(--shadow)!important;transform:none!important}
+.reciter-group{margin:12px 0}.reciter-group h3{color:var(--primary);margin-bottom:8px}
+.warning-strong{background:#fff4e5;border:1px solid #f0c477;border-radius:14px;padding:14px;color:#6b4712}
+.ai-workspace{display:grid;grid-template-columns:1fr 1fr;gap:14px}.record-orb{width:110px;height:110px;border-radius:50%;border:0;background:linear-gradient(145deg,#c33,#8e1f1f);color:#fff;font-size:34px;cursor:pointer}
+.wrong-word{color:#c62828;background:#ffebee;border-radius:5px;padding:0 3px}
+.mosque-map{min-height:250px;border-radius:20px;background:linear-gradient(135deg,#dceee8,#f9f1db);display:grid;place-items:center;text-align:center;padding:20px}
+.zakat-result{font-size:28px;color:var(--primary);font-weight:900;text-align:center;padding:20px}
+.parent-dua{font-family:"Amiri","Traditional Arabic",serif;font-size:24px;line-height:2.1;text-align:center}
+@media(max-width:720px){.date-ribbon{grid-template-columns:1fr}.ai-workspace{grid-template-columns:1fr}.prophet-hero{padding:24px 18px;min-height:230px}}
